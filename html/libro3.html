@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página de Libro</title>
+    <style>
+        .imagen{
+            position: absolute;
+            top: 100;
+            right: 100;
+            width: 360px; /* Cambia el tamaño según tus necesidades */
+            height: 478px; /* Cambia el tamaño según tus necesidades */
+            z-index: 9999;
+        }
+        body {
+            font-family: 'Georgia', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ce7500ab;
+            color: #333;
+        }
+
+        header {
+            background-color: #a53508be;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #000000;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 80px;
+            background-color: #d3a67dc9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 35px;
+            margin-left: 360px;
+        }
+
+        h2 {
+            color: #050000;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #a53508be;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+       
+    <header>
+        <h1>SAPIENS. DE ANIMALES A DIOSES</h1>
+    </header>
+  <img src="data:image/jpeg;base64,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" alt="" class="imagen">
+    <main>
+     
+        <section>
+            <h2>Un poco del libro</h2>
+            <p>
+                Este libro fue publicado en 2014 y se ha transformado en una de las obras de no-ficción más populares de los últimos años, llegando a vender más de 16 millones de copias en todo el mundo. El autor de Sapiens, Yuval Noah Harari, ha pasado a ser uno de los intelectuales más influyentes del presente y actualmente es común verlo en entrevistas haciendo pronósticos sobre el futuro de la especie humana.
+            </p>
+        </section>
+        <section>
+            <h2>Resumen</h2>
+            <p>
+                Este es el fascinante relato de nuestra extraordinaria historia: de simios sin importancia a amos del mundo. ¿Cómo logró nuestra especie imponerse en la lucha por la existencia? ¿Por qué nuestros ancestros recolectores se unieron para crear ciudades y reinos? ¿Cómo llegamos a creer en dioses, en naciones o en los derechos humanos; a confiar en el dinero, en los libros o en las leyes? ¿Cómo acabamos sometidos a la burocracia, a los horarios y al consumismo? ¿Y cómo será el mundo en los milenios venideros? En De animales a dioses, Yuval Noah Harari traza una breve historia de la humanidad, desde los primeros humanos que caminaron sobre la Tierra hasta los radicales y a veces devastadores avances de las tres grandes revoluciones que nuestra especie ha protagonizado: la cognitiva, la agrícola y la científica.
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
