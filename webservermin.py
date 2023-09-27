@@ -44,7 +44,7 @@ class WebRequestHandler(BaseHTTPRequestHandler):
 """
 
 
-books = {
+libros = {
             '1':"""
             <h1> Book 1 </h1>
             """, 
